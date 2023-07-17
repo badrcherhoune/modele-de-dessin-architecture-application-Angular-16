@@ -11,6 +11,8 @@ import { RegisterComponent } from './componants/user/register/register.component
 import { MainComponent } from './componants/main/main.component';
 import { FooterComponent } from './componants/composant/footer/footer.component';
 import { SpinnerComponent } from './componants/composant/spinner/spinner.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { PagesError404Component } from './componants/composant/pages-error404/pages-error404.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +24,13 @@ import { SpinnerComponent } from './componants/composant/spinner/spinner.compone
     RegisterComponent,
     MainComponent,
     FooterComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    PagesError404Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
